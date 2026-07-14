@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BB88 - Landing Page</title>
+    <!-- Gagamit ng CDN para sa Tailwind CSS v4 -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Pasadya para sa soft background curves na makikita sa orihinal na disenyo */
+      .hero-bg {
+        background: radial-gradient(
+          circle at 80% 20%,
+          #eefbf4 0%,
+          #ffffff 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="font-sans text-slate-700 bg-[#f9fdfa]">
+    <!-- HEADER / NAVIGATION -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#e2ece6]"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Logo Placeholder -->
+        <div class="flex items-center gap-2">
+          <div
+            class="w-10 h-10 rounded-full bg-[#3d8c6b] flex items-center justify-center text-white font-bold text-lg"
+          >
+            B
+          </div>
+          <span class="font-bold text-xl text-[#2f6d52] tracking-wide"
+            >BB88 ADVERTISING</span
+          >
+        </div>
+        <!-- Navigation Links -->
+        <nav
+          class="hidden md:flex items-center gap-1 bg-[#f0f7f3] px-3 py-1.5 rounded-full border border-[#d6ebd9]"
+        >
+          <a
+            href="#home"
+            class="px-4 py-1.5 rounded-full text-xs font-semibold bg-[#3d8c6b] text-white transition"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="px-4 py-1.5 rounded-full text-xs font-semibold text-[#446d5a] hover:bg-white/50 transition"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="px-4 py-1.5 rounded-full text-xs font-semibold text-[#446d5a] hover:bg-white/50 transition"
+            >Services</a
+          >
+          <a
+            href="#portfolio"
+            class="px-4 py-1.5 rounded-full text-xs font-semibold text-[#446d5a] hover:bg-white/50 transition"
+            >Portfolio</a
+          >
+          <a
+            href="#team"
+            class="px-4 py-1.5 rounded-full text-xs font-semibold text-[#446d5a] hover:bg-white/50 transition"
+            >Team</a
+          >
+          <a
+            href="#contact"
+            class="px-4 py-1.5 rounded-full text-xs font-semibold text-[#446d5a] hover:bg-white/50 transition"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-bg py-16 md:py-24 overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="space-y-6">
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-[#23533e] leading-tight"
+          >
+            WELCOME TO BB88
+          </h1>
+          <p class="text-lg md:text-xl text-[#507d67] font-medium max-w-lg">
+            Quickly start your project now and set the stage for success.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a
+              href="#contact"
+              class="px-8 py-3.5 bg-[#2a684d] hover:bg-[#1f4f39] text-white font-bold rounded-lg shadow-md transition transform hover:-translate-y-0.5"
+            >
+              Get Started
+            </a>
+            <button
+              class="flex items-center gap-2 px-6 py-3.5 text-[#2a684d] font-bold hover:text-[#1f4f39] transition"
+            >
+              <span
+                class="w-10 h-10 rounded-full border-2 border-[#2a684d] flex items-center justify-center text-sm"
+              >
+                <i class="fa-solid fa-play ml-0.5"></i>
+              </span>
+              Watch Video
+            </button>
+          </div>
+        </div>
+        <!-- Blank Banner Image Placeholder -->
+        <div class="relative flex justify-center">
+          <div
+            class="w-full max-w-lg aspect-video md:aspect-[4/3] bg-gradient-to-tr from-[#d3eedd] to-[#e8f6ed] border-2 border-dashed border-[#84c3a1] rounded-3xl flex flex-col items-center justify-center p-6 text-center"
+          >
+            <i class="fa-regular fa-image text-5xl text-[#529e79] mb-3"></i>
+            <p class="text-[#3a7558] font-medium text-sm">
+              Main Banner Illustration
+            </p>
+            <span class="text-xs text-[#62977b] mt-1"
+              >(SVG/Image Placeholder)</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS BAR (Design and Marketing Solutions) -->
+    <section class="py-12 bg-gradient-to-b from-white to-[#f0f7f3]">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-center text-[#23533e] mb-10">
+          Design and Marketing Solutions
+        </h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-6 rounded-2xl border border-[#d3eedd] text-center shadow-xs flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-[#f0f7f3] border-2 border-[#84c3a1] flex items-center justify-center mb-4 text-[#3d8c6b]"
+            >
+              <i class="fa-solid fa-folder-open text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-[#23533e] text-sm">Inception</h3>
+          </div>
+          <!-- Card 2 (Active/Highlighted state) -->
+          <div
+            class="bg-[#2a684d] p-6 rounded-2xl border border-[#2a684d] text-center shadow-md flex flex-col items-center text-white"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-white/20 border-2 border-white/50 flex items-center justify-center mb-4 text-white"
+            >
+              <i class="fa-solid fa-lightbulb text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-sm">Digital Marketing Agency</h3>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-6 rounded-2xl border border-[#d3eedd] text-center shadow-xs flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-[#f0f7f3] border-2 border-[#84c3a1] flex items-center justify-center mb-4 text-[#3d8c6b]"
+            >
+              <i class="fa-solid fa-chart-line text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-[#23533e] text-sm">Media Advisory</h3>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white p-6 rounded-2xl border border-[#d3eedd] text-center shadow-xs flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-[#f0f7f3] border-2 border-[#84c3a1] flex items-center justify-center mb-4 text-[#3d8c6b]"
+            >
+              <i class="fa-solid fa-cubes text-2xl"></i>
+            </div>
+            <h3 class="font-bold text-[#23533e] text-sm">Digital Solutions</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-6 text-center space-y-6">
+        <span class="text-sm font-bold tracking-wider text-[#3d8c6b] uppercase"
+          >About Us</span
+        >
+        <h2 class="text-2xl md:text-3xl font-extrabold text-[#23533e]">
+          Creative Solutions for Impactful Brand Communication
+        </h2>
+        <div class="w-20 h-1 bg-[#3d8c6b] mx-auto rounded-full"></div>
+        <div
+          class="space-y-4 text-slate-600 text-sm md:text-base leading-relaxed max-w-4xl mx-auto pt-4"
+        >
+          <p>
+            BB88 Advertising is built on the philosophy of delivering creative
+            and highly professional advertising services that elevate your
+            business. We tailor each campaign with precision, aligning visual
+            artistry with strategic marketing to produce memorable impressions
+            across different communication channels.
+          </p>
+          <p>
+            Our diverse experience ensures that from large-scale printing to
+            full digital transformations, we are geared up to fulfill your
+            requirements. Let us be your trusted partner in turning fresh ideas
+            into substantial real-world growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-16 bg-[#eef7f2]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span
+            class="text-sm font-bold tracking-wider text-[#3d8c6b] uppercase"
+            >What We Offer</span
+          >
+          <h2 class="text-3xl font-extrabold text-[#23533e] mt-2">
+            Our Services
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+          <!-- Left Image Card Placeholder -->
+          <div
+            class="bg-white p-6 rounded-2xl border border-[#d3eedd] shadow-sm flex flex-col items-center justify-center aspect-square"
+          >
+            <div
+              class="w-full h-full bg-[#f2faf5] border-2 border-dashed border-[#a6d8bd] rounded-xl flex flex-col items-center justify-center p-4"
+            >
+              <i class="fa-solid fa-display text-4xl text-[#3d8c6b] mb-2"></i>
+              <span class="text-[#3d8c6b] font-semibold text-sm"
+                >Media Production</span
+              >
+            </div>
+          </div>
+
+          <!-- Center Featured Service (Main spotlight) -->
+          <div
+            class="bg-[#2a684d] text-white p-8 rounded-2xl border-4 border-[#8fdcb4] shadow-xl text-center space-y-6"
+          >
+            <div
+              class="w-20 h-20 rounded-full bg-white/20 border border-white/50 flex items-center justify-center mx-auto text-3xl"
+            >
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="text-xl font-bold">Brand & Strategy Management</h3>
+            <p class="text-sm text-[#d1f3e0] leading-relaxed">
+              We focus on developing dynamic brands that speak volumes to target
+              audiences. Our team handles complete strategy conceptualization,
+              deployment plans, and asset creation, ensuring consistent
+              engagement at every touchpoint.
+            </p>
+          </div>
+
+          <!-- Right Image Card Placeholder -->
+          <div
+            class="bg-white p-6 rounded-2xl border border-[#d3eedd] shadow-sm flex flex-col items-center justify-center aspect-square"
+          >
+            <div
+              class="w-full h-full bg-[#f2faf5] border-2 border-dashed border-[#a6d8bd] rounded-xl flex flex-col items-center justify-center p-4"
+            >
+              <i class="fa-solid fa-bullhorn text-4xl text-[#3d8c6b] mb-2"></i>
+              <span class="text-[#3d8c6b] font-semibold text-sm"
+                >Campaign Execution</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS LOGOS -->
+    <section class="py-10 bg-white border-y border-[#e2ece6]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-75"
+        >
+          <!-- Blank Circular Logo Placeholders representing clients/brands -->
+          <div
+            class="w-16 h-16 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400"
+          >
+            LOGO 1
+          </div>
+          <div
+            class="w-16 h-16 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400"
+          >
+            LOGO 2
+          </div>
+          <div
+            class="w-16 h-16 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400"
+          >
+            LOGO 3
+          </div>
+          <div
+            class="w-16 h-16 rounded-full bg-emerald-100 border-2 border-emerald-500 flex items-center justify-center text-xs font-bold text-emerald-700 shadow-sm"
+          >
+            MAIN
+          </div>
+          <div
+            class="w-16 h-16 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400"
+          >
+            LOGO 4
+          </div>
+          <div
+            class="w-16 h-16 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400"
+          >
+            LOGO 5
+          </div>
+          <div
+            class="w-16 h-16 rounded-full bg-slate-100 border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400"
+          >
+            LOGO 6
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="py-16 bg-[#f7fbf8]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span
+            class="text-sm font-bold tracking-wider text-[#3d8c6b] uppercase"
+            >Our Works</span
+          >
+          <h2 class="text-3xl font-extrabold text-[#23533e] mt-2">Portfolio</h2>
+
+          <!-- Category Filters -->
+          <div class="flex flex-wrap justify-center gap-2 mt-6">
+            <button
+              class="px-4 py-1.5 rounded-full text-xs font-bold bg-[#2a684d] text-white shadow-sm"
+            >
+              All Work
+            </button>
+            <button
+              class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-[#446d5a] border border-[#d3eedd] hover:bg-[#eef7f2] transition"
+            >
+              Brand Design
+            </button>
+            <button
+              class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-[#446d5a] border border-[#d3eedd] hover:bg-[#eef7f2] transition"
+            >
+              Outdoors
+            </button>
+            <button
+              class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-[#446d5a] border border-[#d3eedd] hover:bg-[#eef7f2] transition"
+            >
+              Print Media
+            </button>
+            <button
+              class="px-4 py-1.5 rounded-full text-xs font-bold bg-white text-[#446d5a] border border-[#d3eedd] hover:bg-[#eef7f2] transition"
+            >
+              Digital Assets
+            </button>
+          </div>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Item 1 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden border border-[#d3eedd] shadow-xs group hover:shadow-md transition"
+          >
+            <div
+              class="aspect-video bg-[#f0f6f2] border-b border-[#e2ece6] flex flex-col items-center justify-center p-4"
+            >
+              <i class="fa-regular fa-image text-4xl text-slate-300"></i>
+            </div>
+            <div class="p-4 flex items-center justify-between">
+              <span class="text-xs font-bold text-[#3d8c6b]"
+                >Print Advertisement</span
+              >
+              <i
+                class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"
+              ></i>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden border border-[#d3eedd] shadow-xs group hover:shadow-md transition"
+          >
+            <div
+              class="aspect-video bg-[#f0f6f2] border-b border-[#e2ece6] flex flex-col items-center justify-center p-4"
+            >
+              <i class="fa-regular fa-image text-4xl text-slate-300"></i>
+            </div>
+            <div class="p-4 flex items-center justify-between">
+              <span class="text-xs font-bold text-[#3d8c6b]"
+                >Billboard Layout</span
+              >
+              <i
+                class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"
+              ></i>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden border border-[#d3eedd] shadow-xs group hover:shadow-md transition"
+          >
+            <div
+              class="aspect-video bg-[#f0f6f2] border-b border-[#e2ece6] flex flex-col items-center justify-center p-4"
+            >
+              <i class="fa-regular fa-image text-4xl text-slate-300"></i>
+            </div>
+            <div class="p-4 flex items-center justify-between">
+              <span class="text-xs font-bold text-[#3d8c6b]"
+                >Corporate Stationary</span
+              >
+              <i
+                class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"
+              ></i>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden border border-[#d3eedd] shadow-xs group hover:shadow-md transition"
+          >
+            <div
+              class="aspect-video bg-[#f0f6f2] border-b border-[#e2ece6] flex flex-col items-center justify-center p-4"
+            >
+              <i class="fa-regular fa-image text-4xl text-slate-300"></i>
+            </div>
+            <div class="p-4 flex items-center justify-between">
+              <span class="text-xs font-bold text-[#3d8c6b]"
+                >Flyers & Brochure</span
+              >
+              <i
+                class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"
+              ></i>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden border border-[#d3eedd] shadow-xs group hover:shadow-md transition"
+          >
+            <div
+              class="aspect-video bg-[#f0f6f2] border-b border-[#e2ece6] flex flex-col items-center justify-center p-4"
+            >
+              <i class="fa-regular fa-image text-4xl text-slate-300"></i>
+            </div>
+            <div class="p-4 flex items-center justify-between">
+              <span class="text-xs font-bold text-[#3d8c6b]"
+                >Social Media Assets</span
+              >
+              <i
+                class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"
+              ></i>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden border border-[#d3eedd] shadow-xs group hover:shadow-md transition"
+          >
+            <div
+              class="aspect-video bg-[#f0f6f2] border-b border-[#e2ece6] flex flex-col items-center justify-center p-4"
+            >
+              <i class="fa-regular fa-image text-4xl text-slate-300"></i>
+            </div>
+            <div class="p-4 flex items-center justify-between">
+              <span class="text-xs font-bold text-[#3d8c6b]"
+                >Packaging Layout</span
+              >
+              <i
+                class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <button
+            class="px-8 py-3.5 bg-white border-2 border-[#2a684d] text-[#2a684d] font-bold rounded-lg hover:bg-[#2a684d] hover:text-white transition"
+          >
+            See More Works
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR TEAM -->
+    <section id="team" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span
+            class="text-sm font-bold tracking-wider text-[#3d8c6b] uppercase"
+            >Who We Are</span
+          >
+          <h2 class="text-3xl font-extrabold text-[#23533e] mt-2">Our Team</h2>
+        </div>
+
+        <!-- Department Selector (Icons Grid) -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+          <div
+            class="flex flex-col items-center p-4 bg-[#f0f7f3] border border-[#d3eedd] rounded-xl w-24 text-center cursor-pointer"
+          >
+            <i class="fa-solid fa-user-tie text-[#3d8c6b] text-xl mb-1"></i>
+            <span class="text-[10px] font-bold text-[#23533e]">Directors</span>
+          </div>
+          <div
+            class="flex flex-col items-center p-4 bg-[#2a684d] text-white rounded-xl w-24 text-center cursor-pointer shadow-sm"
+          >
+            <i class="fa-solid fa-pen-nib text-white text-xl mb-1"></i>
+            <span class="text-[10px] font-bold">Creative Team</span>
+          </div>
+          <div
+            class="flex flex-col items-center p-4 bg-[#f0f7f3] border border-[#d3eedd] rounded-xl w-24 text-center cursor-pointer"
+          >
+            <i class="fa-solid fa-code text-[#3d8c6b] text-xl mb-1"></i>
+            <span class="text-[10px] font-bold text-[#23533e]">Web Devs</span>
+          </div>
+          <div
+            class="flex flex-col items-center p-4 bg-[#f0f7f3] border border-[#d3eedd] rounded-xl w-24 text-center cursor-pointer"
+          >
+            <i class="fa-solid fa-video text-[#3d8c6b] text-xl mb-1"></i>
+            <span class="text-[10px] font-bold text-[#23533e]">Production</span>
+          </div>
+        </div>
+
+        <!-- Team Showcase Content (Illustration representation & Description) -->
+        <div
+          class="grid md:grid-cols-2 gap-12 items-center bg-[#f7fbf8] p-8 md:p-12 rounded-3xl border border-[#d3eedd]"
+        >
+          <div class="space-y-6">
+            <span
+              class="text-xs font-extrabold text-[#3d8c6b] tracking-widest uppercase"
+              >Creative & Production Department</span
+            >
+            <h3 class="text-2xl font-bold text-[#23533e]">
+              We design layouts with functional advertising precision.
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Our creative unit blends technical experience with wild concepts
+              to establish highly efficient marketing systems. From initial
+              digital drafts to physical prints, our team drives value and
+              execution quality.
+            </p>
+          </div>
+
+          <!-- Blank/SVG Illustration Area -->
+          <div
+            class="h-64 bg-[#edf6f0] border-2 border-dashed border-[#8ecfa9] rounded-2xl flex flex-col items-center justify-center p-6 text-center"
+          >
+            <i
+              class="fa-solid fa-people-group text-5xl text-[#3d8c6b] mb-2"
+            ></i>
+            <p class="text-[#23533e] font-semibold text-sm">
+              Team Illustration Placeholder
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT POSTS -->
+    <section id="posts" class="py-16 bg-[#eef7f2]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <span
+            class="text-sm font-bold tracking-wider text-[#3d8c6b] uppercase"
+            >Blogs & News</span
+          >
+          <h2 class="text-3xl font-extrabold text-[#23533e] mt-2">
+            Recent Posts
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Post 1 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden border border-[#d3eedd] shadow-sm flex flex-col h-full"
+          >
+            <!-- Thumbnail placeholder -->
+            <div
+              class="h-48 bg-[#f2faf5] flex flex-col items-center justify-center border-b border-[#e2ece6]"
+            >
+              <i class="fa-regular fa-image text-3xl text-slate-300"></i>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <span
+                  class="text-xs font-bold text-[#3d8c6b] bg-[#eef7f2] px-2.5 py-1 rounded-full uppercase"
+                  >Advertising</span
+                >
+                <h4 class="text-lg font-bold text-[#23533e] line-clamp-2">
+                  Maximizing Visual Reach in Outdoor Ad Placement
+                </h4>
+                <p class="text-xs text-slate-500 line-clamp-3">
+                  Outdoor billboards require exact visual placement strategies.
+                  Read on to master structural placement for maximized local
+                  audience conversions.
+                </p>
+              </div>
+              <div
+                class="pt-4 border-t border-[#e2ece6] mt-4 flex items-center justify-between text-xs text-slate-400"
+              >
+                <span>July 14, 2026</span>
+                <span
+                  class="font-bold text-[#2a684d] hover:underline cursor-pointer"
+                  >Read more</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 2 (Featured Post Card style) -->
+          <div
+            class="bg-[#2a684d] text-white rounded-2xl overflow-hidden shadow-lg flex flex-col h-full border border-[#2a684d]"
+          >
+            <div
+              class="h-48 bg-white/10 flex flex-col items-center justify-center border-b border-white/25"
+            >
+              <!-- Icon/Visual dynamic replacement -->
+              <i class="fa-solid fa-award text-4xl text-amber-300 mb-2"></i>
+              <span
+                class="text-xs text-[#d1f3e0] uppercase tracking-widest font-semibold"
+                >Weekly Highlight</span
+              >
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <span
+                  class="text-xs font-bold text-white bg-white/20 px-2.5 py-1 rounded-full uppercase"
+                  >Strategy</span
+                >
+                <h4 class="text-lg font-bold line-clamp-2">
+                  Creative Storytelling: The Foundation of Modern Ads
+                </h4>
+                <p class="text-xs text-[#d1f3e0] line-clamp-3">
+                  How emotional design pathways and clean typography choices
+                  combine to form modern high-converting commercial structures.
+                </p>
+              </div>
+              <div
+                class="pt-4 border-t border-white/25 mt-4 flex items-center justify-between text-xs text-[#d1f3e0]"
+              >
+                <span>July 12, 2026</span>
+                <span class="font-bold underline cursor-pointer"
+                  >Read more</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3 -->
+          <div
+            class="bg-white rounded-2xl overflow-hidden border border-[#d3eedd] shadow-sm flex flex-col h-full"
+          >
+            <!-- Thumbnail placeholder -->
+            <div
+              class="h-48 bg-[#f2faf5] flex flex-col items-center justify-center border-b border-[#e2ece6]"
+            >
+              <i class="fa-regular fa-image text-3xl text-slate-300"></i>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div class="space-y-3">
+                <span
+                  class="text-xs font-bold text-[#3d8c6b] bg-[#eef7f2] px-2.5 py-1 rounded-full uppercase"
+                  >Design Tech</span
+                >
+                <h4 class="text-lg font-bold text-[#23533e] line-clamp-2">
+                  Digital Vector Assets vs Vector Prints
+                </h4>
+                <p class="text-xs text-slate-500 line-clamp-3">
+                  Ensuring dynamic resolution and color space alignments across
+                  varied digital and physical print dimensions.
+                </p>
+              </div>
+              <div
+                class="pt-4 border-t border-[#e2ece6] mt-4 flex items-center justify-between text-xs text-slate-400"
+              >
+                <span>July 10, 2026</span>
+                <span
+                  class="font-bold text-[#2a684d] hover:underline cursor-pointer"
+                  >Read more</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+          <span
+            class="text-sm font-bold tracking-wider text-[#3d8c6b] uppercase"
+            >Get In Touch</span
+          >
+          <h2 class="text-3xl font-extrabold text-[#23533e]">Contact Us</h2>
+          <p class="text-sm text-slate-500 font-medium">
+            For immediate assistance contact us between
+            <span class="font-bold text-[#2a684d]">9:00 AM - 6:00 PM</span
+            ><br />
+            at
+            <span class="font-bold text-[#2a684d]">+63 (045) 888-8888</span> or
+            <span class="font-bold text-[#2a684d]">contact@bb88.com</span>
+          </p>
+        </div>
+
+        <!-- Blank Map Placeholder -->
+        <div
+          class="w-full h-80 bg-slate-100 rounded-3xl border border-[#d3eedd] mb-12 flex flex-col items-center justify-center p-6 text-slate-400 shadow-inner relative overflow-hidden"
+        >
+          <!-- Mock Map Visual Layout -->
+          <div
+            class="absolute inset-0 bg-[#e5f1e9] opacity-40 pattern-grid-lg"
+          ></div>
+          <i
+            class="fa-solid fa-map-location-dot text-5xl text-[#a6d8bd] mb-3 relative z-10"
+          ></i>
+          <p class="text-[#3d8c6b] font-bold text-sm relative z-10">
+            Interactive Office Map Placeholder
+          </p>
+          <span class="text-xs text-[#5aa882] relative z-10"
+            >Angeles, Central Luzon, Philippines</span
+          >
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-12 items-start">
+          <!-- Contact Info Cards (Left Columns) -->
+          <div class="lg:col-span-2 space-y-4">
+            <!-- Info 1 -->
+            <div
+              class="p-5 bg-[#f7fbf8] border border-[#d3eedd] rounded-2xl flex items-start gap-4"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-[#eef7f2] border border-[#a6d8bd] flex items-center justify-center text-[#2a684d] shrink-0"
+              >
+                <i class="fa-solid fa-location-dot text-lg"></i>
+              </div>
+              <div>
+                <h5
+                  class="font-bold text-xs text-[#23533e] uppercase tracking-wider"
+                >
+                  Our Address
+                </h5>
+                <p class="text-sm text-slate-600 mt-1">
+                  McArthur Highway, Angeles City, Central Luzon, Philippines
+                </p>
+              </div>
+            </div>
+            <!-- Info 2 -->
+            <div
+              class="p-5 bg-[#f7fbf8] border border-[#d3eedd] rounded-2xl flex items-start gap-4"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-[#eef7f2] border border-[#a6d8bd] flex items-center justify-center text-[#2a684d] shrink-0"
+              >
+                <i class="fa-solid fa-envelope text-lg"></i>
+              </div>
+              <div>
+                <h5
+                  class="font-bold text-xs text-[#23533e] uppercase tracking-wider"
+                >
+                  Email Addresses
+                </h5>
+                <p class="text-sm text-[#2a684d] font-semibold mt-1">
+                  inquire@bb88advertising.com
+                </p>
+                <p class="text-xs text-slate-500">
+                  support@bb88advertising.com
+                </p>
+              </div>
+            </div>
+            <!-- Info 3 -->
+            <div
+              class="p-5 bg-[#f7fbf8] border border-[#d3eedd] rounded-2xl flex items-start gap-4"
+            >
+              <div
+                class="w-12 h-12 rounded-xl bg-[#eef7f2] border border-[#a6d8bd] flex items-center justify-center text-[#2a684d] shrink-0"
+              >
+                <i class="fa-solid fa-phone text-lg"></i>
+              </div>
+              <div>
+                <h5
+                  class="font-bold text-xs text-[#23533e] uppercase tracking-wider"
+                >
+                  Hotline Numbers
+                </h5>
+                <p class="text-sm text-slate-600 mt-1 font-semibold">
+                  +63 (917) 123-4567
+                </p>
+                <p class="text-xs text-slate-500">
+                  Direct Landline: (045) 888-8888
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (Right Columns) -->
+          <form
+            class="lg:col-span-3 bg-[#f7fbf8] border border-[#d3eedd] p-8 rounded-3xl space-y-6 shadow-xs"
+          >
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label
+                  class="block text-xs font-bold text-[#23533e] uppercase mb-2"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="John"
+                  class="w-full px-4 py-3 bg-white border border-[#d3eedd] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2a684d] focus:border-transparent text-sm"
+                />
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-[#23533e] uppercase mb-2"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="Doe"
+                  class="w-full px-4 py-3 bg-white border border-[#d3eedd] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2a684d] focus:border-transparent text-sm"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                class="block text-xs font-bold text-[#23533e] uppercase mb-2"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                placeholder="john@example.com"
+                class="w-full px-4 py-3 bg-white border border-[#d3eedd] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2a684d] focus:border-transparent text-sm"
+              />
+            </div>
+            <div>
+              <label
+                class="block text-xs font-bold text-[#23533e] uppercase mb-2"
+                >Message</label
+              >
+              <textarea
+                rows="4"
+                placeholder="How can we help you with your next brand execution?"
+                class="w-full px-4 py-3 bg-white border border-[#d3eedd] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#2a684d] focus:border-transparent text-sm resize-none"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full py-4 bg-[#2a684d] hover:bg-[#1f4f39] text-white font-bold rounded-xl shadow-md transition transform hover:-translate-y-0.5"
+            >
+              Submit Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1f4f39] text-white py-12 border-t-4 border-[#8fdcb4]">
+      <div class="max-w-7xl mx-auto px-6 text-center space-y-8">
+        <div class="space-y-3">
+          <h4 class="text-lg font-bold tracking-widest text-[#8fdcb4]">
+            BB88 ADVERTISING
+          </h4>
+          <p class="text-xs text-[#b8dfcb] max-w-md mx-auto">
+            Delivering professional advertising, grand design campaigns,
+            structural layouts, and customized marketing templates.
+          </p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex justify-center gap-6 text-xl">
+          <a href="#" class="text-white hover:text-[#8fdcb4] transition"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-white hover:text-[#8fdcb4] transition"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="text-white hover:text-[#8fdcb4] transition"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="text-white hover:text-[#8fdcb4] transition"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+
+        <div class="border-t border-white/10 pt-8 text-[11px] text-[#b8dfcb]">
+          <p>
+            &copy; 2026 BB88 Advertising. All rights reserved. Created and
+            configured in compliance with client layouts.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
