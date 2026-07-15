@@ -17,11 +17,11 @@
   body {
     background-color: green;
     color: white;
-    font-family: "Inter", sans-serif;
   }
 
   p {
     font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
   }
 }
 
@@ -91,11 +91,12 @@ nav:nth-child(last-child) {
 /* HERO SECTION */
 .hero {
   width: 100%;
-  padding: 40px 4rem 300px 4rem;
+  padding: 40px 4rem 0 4rem;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   align-items: flex-start;
+  aspect-ratio: 16 / 9;
 }
 
 .hero-contents {
