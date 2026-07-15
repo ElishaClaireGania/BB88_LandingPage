@@ -91,7 +91,7 @@ nav:nth-child(last-child) {
 /* HERO SECTION */
 .hero {
   width: 100%;
-  padding: 40px 4rem 350px 4rem;
+  padding: 40px 4rem 80px 4rem;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
