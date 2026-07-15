@@ -26,8 +26,9 @@
 }
 
 #bg-landing {
-  background-image: url("../assets/bg/background\ vector1.png");
-  min-height: 300vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* HEADER */
@@ -96,6 +97,18 @@ nav:nth-child(last-child) {
   flex-direction: column;
   align-self: flex-start;
   align-items: flex-start;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero-contents {
@@ -180,8 +193,7 @@ nav:nth-child(last-child) {
 }
 
 .design-marketing .divider {
-  margin-top: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .about-icons {
@@ -190,7 +202,7 @@ nav:nth-child(last-child) {
   gap: 80px;
   width: 100%;
   max-width: 900px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   margin-top: 10px;
 }
 
