@@ -1,0 +1,53 @@
+/* =================================================== */
+/* TAILWIND & CUSTOM PROPERTIES CONFIGURATION          */
+/* =================================================== */
+
+@layer base {
+  :root {
+    --brandTeal: #48887b;
+    --brandLime: #a8cf45;
+    --brandTeal-rgb: 72, 136, 123;
+  }
+}
+
+.text-brandTeal { color: var(--brandTeal); }
+.bg-brandTeal { background-color: var(--brandTeal); }
+.border-brandTeal { border-color: var(--brandTeal); }
+
+.text-brandLime { color: var(--brandLime); }
+.bg-brandLime { background-color: var(--brandLime); }
+.border-brandLime { border-color: var(--brandLime); }
+
+body, .font-sans {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* =================================================== */
+/* TEAM SECTION CUSTOM STYLES (KIM/SALIE MIX)          */
+/* =================================================== */
+
+/* Ang sliding pointer arrow ng chat bubble */
+#bubble-arrow {
+  transition: left 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Base style para sa mga team buttons */
+.team-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Active card highlight state gamit ang paborito mong Brand Mint at anino */
+.team-card.active-card {
+  border-color: #D7EDE8 !important; /* Brand Mint */
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 20px -3px rgba(72, 136, 123, 0.25);
+}
+
+/* Paragraph adjustment para sa mas maluwag at madaling basahing kopya */
+#role-desc {
+  line-height: 1.8;
+  letter-spacing: 0.025em;
+}

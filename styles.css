@@ -1,5 +1,0 @@
-@import "tailwindcss";
-
-@layer body {
-  @apply bg-black text-red;
-}
