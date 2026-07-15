@@ -91,12 +91,11 @@ nav:nth-child(last-child) {
 /* HERO SECTION */
 .hero {
   width: 100%;
-  padding: 40px 4rem 0 4rem;
+  padding: 40px 4rem 350px 4rem;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   align-items: flex-start;
-  aspect-ratio: 16 / 9;
 }
 
 .hero-contents {
