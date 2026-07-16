@@ -105,7 +105,7 @@ nav {
 
 .hero-vector-overlay {
   position: absolute;
-  top: clamp(214px, 15vh, 214px); /* Adjusts between 120px and 214px */
+  top: clamp(210px, 15vh, 214px); /* Adjusts between 120px and 214px */
   bottom: 0;
   right: clamp(-200px, -10vw, -100px); /* Adjusts position */
   width: clamp(300px, 55%, 750px);
@@ -227,7 +227,7 @@ nav {
 .about-vector-overlay {
   position: absolute;
   right: clamp(-200px, -10vw, -100px);
-  bottom: clamp(940px, 85vh, 940px);
+  bottom: clamp(920px, 85vh, 940px);
   width: clamp(300px, 55%, 750px);
   max-width: 750px;
   height: auto;
