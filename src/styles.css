@@ -116,7 +116,7 @@ nav {
 
 .hero-vector-overlay {
   position: absolute;
-  top: 150px;
+  top: 160px;
   bottom: 0;
   right: -150px;
   width: 55%;
@@ -239,7 +239,7 @@ nav {
 .about-vector-overlay {
   position: absolute;
   right: -150px;
-  bottom: 950px;
+  bottom: 920px;
   width: 55%;
   max-width: 750px;
   height: auto;
