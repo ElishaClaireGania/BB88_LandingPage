@@ -92,6 +92,51 @@ nav {
 }
 
 /* HERO SECTION */
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-bg-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-vector-overlay {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  max-width: 750px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.hero-vector-overlay {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  right: -150px;
+  width: 55%;
+  max-width: 750px;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 1;
+  transform: scale(1.2);
+
+  transform-origin: bottom right;
+}
+
+@media (max-width: 1024px) {
+  .hero-vector-overlay {
+    width: 60%;
+    max-width: 550px;
+  }
+}
+
 .hero {
   width: 100%;
   height: 100vh;
@@ -118,10 +163,13 @@ nav {
   max-width: 800px;
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
+  text-align: left;
   gap: 1rem;
   color: #48887b;
   font-weight: bold;
   margin-top: 0px;
+  padding-top: 0;
 }
 
 .hero-contents h1 {
@@ -176,8 +224,42 @@ nav {
 }
 
 /* ABOUT SECTION */
+.about-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about-bg-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-vector-overlay {
+  position: absolute;
+  right: -150px;
+  bottom: 960px;
+  width: 55%;
+  max-width: 750px;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 1;
+  transform: scale(1.2);
+  transform-origin: bottom right;
+}
+
+@media (max-width: 1024px) {
+  .about-vector-overlay {
+    width: 60%;
+    max-width: 550px;
+    bottom: 60px;
+  }
+}
+
 .about {
-  padding: 50px 2rem 100px 2rem;
+  padding: 60px 2rem 100px 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,8 +288,8 @@ nav {
   gap: 24px;
   width: 100%;
   max-width: 1100px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .icon-container {
@@ -284,7 +366,7 @@ nav {
   background-color: #fff;
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4);
   border-radius: 50px;
-  margin: 10px auto 16px auto;
+  margin: 20px auto 16px auto;
   font-weight: 500;
   padding: 2.5%;
 }
