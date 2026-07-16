@@ -57,20 +57,32 @@ const portfolioCards = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-  const projectGrid = document.getElementById("project-grid");
+  const projectGrid = document.getElementById("projects-grid");
   const filterButtons = document.querySelectorAll(".filter-btn");
+
+  if (!projectGrid) {
+    console.error(
+      "Error: Could not find the portfolio grid element (#projects-grid) in the DOM.",
+    );
+    return;
+  }
 
   // Rendering of Cards
   function displayCards(filterCategory) {
-    // Clears the container
+    // Clears the container completely
     projectGrid.innerHTML = "";
 
-    const filteredCard = portfolioCards.filter((card) => {
+    const filteredCards = portfolioCards.filter((card) => {
       if (filterCategory === "All") return true;
       return card.category === filterCategory;
     });
 
-    filteredCard.forEach((card) => {
+    if (filteredCards.length === 0) {
+      projectGrid.innerHTML = `<div class="no-projects text-center py-8 text-gray-500 w-full col-span-full">No projects found in this category.</div>`;
+      return;
+    }
+
+    filteredCards.forEach((card) => {
       const cardHTML = `
         <div class="project-card">
           <div class="img-wrapper">
@@ -88,22 +100,21 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>`;
 
-      // FIX 3: Changed insertAdjacentElement to insertAdjacentHTML
       projectGrid.insertAdjacentHTML("beforeend", cardHTML);
     });
   }
 
+  // Handle filter button click actions
   filterButtons.forEach((button) => {
-    button.addEventListener("click", (e) => {
-      // Remove active class from all buttons, then add to the clicked one
+    button.addEventListener("click", () => {
       filterButtons.forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
 
-      // Trigger the filter
       const category = button.getAttribute("data-filter");
       displayCards(category);
     });
   });
 
+  // Initial render initialization
   displayCards("All");
 });

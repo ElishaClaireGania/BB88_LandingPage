@@ -10,16 +10,29 @@
   }
 }
 
-.text-brandTeal { color: var(--brandTeal); }
-.bg-brandTeal { background-color: var(--brandTeal); }
-.border-brandTeal { border-color: var(--brandTeal); }
+.text-brandTeal {
+  color: var(--brandTeal);
+}
+.bg-brandTeal {
+  background-color: var(--brandTeal);
+}
+.border-brandTeal {
+  border-color: var(--brandTeal);
+}
 
-.text-brandLime { color: var(--brandLime); }
-.bg-brandLime { background-color: var(--brandLime); }
-.border-brandLime { border-color: var(--brandLime); }
+.text-brandLime {
+  color: var(--brandLime);
+}
+.bg-brandLime {
+  background-color: var(--brandLime);
+}
+.border-brandLime {
+  border-color: var(--brandLime);
+}
 
-body, .font-sans {
-  font-family: 'Inter', sans-serif !important;
+body,
+.font-sans {
+  font-family: "Inter", sans-serif !important;
 }
 
 /* =================================================== */
@@ -41,7 +54,7 @@ body, .font-sans {
 
 /* Active card highlight state gamit ang paborito mong Brand Mint at anino */
 .team-card.active-card {
-  border-color: #D7EDE8 !important; /* Brand Mint */
+  border-color: #d7ede8 !important; /* Brand Mint */
   transform: translateY(-5px) scale(1.03);
   box-shadow: 0 12px 20px -3px rgba(72, 136, 123, 0.25);
 }

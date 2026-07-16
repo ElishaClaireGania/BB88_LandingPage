@@ -10,6 +10,8 @@
     <script src="./scripts/nav-active.js" defer></script>
     <script src="./scripts/animations.js" defer></script>
     <script src="./scripts/portfolio.js" defer></script>
+    <script src="./scripts/app.js" defer></script>
+    <script src="./scripts/team.js" defer></script>
 
     <!-- STYLESHEETS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -80,28 +82,43 @@
 
           <div class="about-icons flex flex-wrap justify-center gap-8 mt-1">
             <div class="icon-container">
-              <img src="assets/icon/icon design ideas.png" alt="Design Ideas" />
+              <div class="icon-wrapper">
+                <img
+                  src="assets/icon/icon design ideas.png"
+                  alt="Design Ideas"
+                />
+              </div>
+              <span class="icon-label">Design Ideas</span>
             </div>
 
             <div class="icon-container">
-              <img
-                src="assets/icon/icon Digital & Mainstream.png"
-                alt="Digital & Mainstream"
-              />
+              <div class="icon-wrapper">
+                <img
+                  src="assets/icon/icon Digital & Mainstream.png"
+                  alt="Digital & Mainstream"
+                />
+              </div>
+              <span class="icon-label">Digital & Mainstream Marketing</span>
             </div>
 
             <div class="icon-container">
-              <img
-                src="assets/icon/icon Brand & Identity.png"
-                alt="Brand & Identity"
-              />
+              <div class="icon-wrapper">
+                <img
+                  src="assets/icon/icon Brand & Identity.png"
+                  alt="Brand & Identity"
+                />
+              </div>
+              <span class="icon-label">Brand & Identity</span>
             </div>
 
             <div class="icon-container">
-              <img
-                src="assets/icon/icon Digital Solutions.png"
-                alt="Digital Solutions"
-              />
+              <div class="icon-wrapper">
+                <img
+                  src="assets/icon/icon Digital Solutions.png"
+                  alt="Digital Solutions"
+                />
+              </div>
+              <span class="icon-label">Digital Solutions</span>
             </div>
           </div>
         </div>
@@ -146,21 +163,8 @@
       </section>
     </div>
 
-    <!-- SERVICES SECTION -->
-    <div>
-      <section
-        class="bg-white font-sans min-h-screen w-full flex flex-col justify-between relative overflow-x-hidden"
-        id="services"
-      >
-        <div
-          class="section-divider absolute w-full h-[30px] bg-[#48887b] z-20 left-1/2 -translate-x-1/2 min-w-[110vw] bottom-[60px]"
-        ></div>
-
-        <div
-          class="section-divider absolute w-full h-[30px] bg-[#48887b] z-20 left-1/2 -translate-x-1/2 min-w-[110vw] bottom-[60px]"
-        ></div>
-      </section>
-    </div>
+    <!-- SERVICES SECTION - Kim -->
+    <section class="services" id="services"></section>
 
     <!-- PORTFOLIO SECTION - Claire -->
     <div
@@ -195,9 +199,400 @@
         <div class="portfolio-projects" id="projects-grid"></div>
 
         <div class="see-more-container">
-          <a href="" class="see-more-btn"><button>SEE MORE</button></a>
+          <a href="#" class="see-more-btn"><button>SEE MORE</button></a>
         </div>
+        <div
+          class="section-divider absolute w-full h-[30px] bg-[#48887b] z-20 left-0 bottom-0"
+        ></div>
       </section>
     </div>
+
+    <!-- TEAM SECTION - Kim -->
+    <section class="team" id="team">
+      <img src="/assets/vector/vector3.png" alt="" class="team-clouds" />
+
+      <div class="team-container">
+        <div class="team-header">
+          <h2 class="team-main-title">Our Team</h2>
+        </div>
+
+        <!-- First Row: 4 Cards -->
+        <div class="team-row row-four">
+          <div class="team-card" data-role="software">
+            <div class="card-body">
+              <div class="active-circle">
+                <img
+                  src="/assets/icon/ourteam(icon1).png"
+                  alt="Software Engineers"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card-band">Software Engineers</div>
+          </div>
+
+          <div class="team-card" data-role="web">
+            <div class="card-body">
+              <div class="active-circle">
+                <img
+                  src="/assets/icon/ourteam(icon2).png"
+                  alt="Web Developers"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card-band">Web Developers</div>
+          </div>
+
+          <div class="team-card" data-role="app">
+            <div class="card-body">
+              <div class="active-circle">
+                <img
+                  src="/assets/icon/ourteam(icon3).png"
+                  alt="App Developers"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card-band">App Developers</div>
+          </div>
+
+          <div class="team-card" data-role="graphic">
+            <div class="card-body">
+              <div class="active-circle">
+                <img
+                  src="/assets/icon/ourteam(icon4).png"
+                  alt="Graphic Artists"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card-band">Graphic Artists</div>
+          </div>
+        </div>
+
+        <!-- Second Row: 3 Cards (Multimedia starts active) -->
+        <div class="team-row row-three">
+          <div
+            class="team-card active-card"
+            data-role="multimedia"
+            id="btn-multimedia"
+          >
+            <div class="card-body">
+              <div class="active-circle">
+                <img
+                  src="/assets/icon/ourteam(icon7).png"
+                  alt="Multimedia Artists"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card-band">Multimedia Artists</div>
+          </div>
+
+          <div class="team-card" data-role="writers">
+            <div class="card-body">
+              <div class="active-circle">
+                <img
+                  src="/assets/icon/ourteam(icon5).png"
+                  alt="Creative Writers"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card-band">Creative Writers</div>
+          </div>
+
+          <div class="team-card" data-role="director">
+            <div class="card-body">
+              <div class="active-circle">
+                <img
+                  src="/assets/icon/ourteam(icon6).png"
+                  alt="Creative Director"
+                  class="card-icon"
+                />
+              </div>
+            </div>
+            <div class="card-band">Creative Director</div>
+          </div>
+        </div>
+
+        <!-- The Speech Bubble Container -->
+        <div class="speech-bubble-wrapper">
+          <div id="team-speech-bubble" class="team-speech-bubble">
+            <div id="bubble-arrow" class="bubble-arrow"></div>
+            <h3 id="role-title" class="role-title">Multimedia Artists</h3>
+            <p id="role-desc" class="role-desc">
+              Multimedia Artists are similar to Graphic Artists, but they
+              specialize in creating dynamic and interactive content like
+              videos, 3D animations, and virtual reality experiences. They use a
+              variety of software tools to create engaging and immersive
+              experiences for users.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-illustration-wrapper">
+          <img
+            src="/assets/vector/vector4.png"
+            alt="Team Illustration"
+            class="team-people-vector"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT POSTS SECTION - Shane -->
+    <section class="recent-posts-section" id="recent-posts">
+      <img
+        src="/assets/vector/vector2.png"
+        alt=""
+        class="posts-vector top-left"
+      />
+      <img
+        src="/assets/vector/vector2.0.png"
+        alt=""
+        class="posts-vector top-right"
+      />
+
+      <div class="posts-container">
+        <div class="posts-header">
+          <h2 class="posts-title">Recent Posts</h2>
+        </div>
+
+        <div class="posts-grid">
+          <article class="post-card">
+            <div class="card-inner">
+              <div class="post-image-wrapper">
+                <img
+                  src="assets/posts/post1.jpg"
+                  alt="E-Commerce's Impact on Marketing"
+                />
+              </div>
+              <div class="post-content">
+                <span class="post-category">Politics</span>
+                <div class="post-title-box">
+                  <h3>E-Commerce's Impact on Marketing:</h3>
+                </div>
+                <p class="post-description">
+                  Harnessing Online Channels to Boost Sales and Reach New
+                  Customers
+                </p>
+                <a href="#" class="btn-read-more"
+                  >Read More <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="card-inner">
+              <div class="post-image-wrapper">
+                <img
+                  src="assets/posts/post2.jpg"
+                  alt="The Rise of Mobile Marketing"
+                />
+              </div>
+              <div class="post-content">
+                <span class="post-category">Sports</span>
+                <div class="post-title-box">
+                  <h3>The Rise of Mobile Marketing:</h3>
+                </div>
+                <p class="post-description">
+                  Creating Mobile-Optimized Campaigns to Reach Customers
+                  on-the-go
+                </p>
+                <a href="#" class="btn-read-more"
+                  >Read More <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="card-inner">
+              <div class="post-image-wrapper">
+                <img
+                  src="assets/posts/post3.jpg"
+                  alt="The Rise of Mobile Marketing"
+                />
+              </div>
+              <div class="post-content">
+                <span class="post-category">Entertainment</span>
+                <div class="post-title-box">
+                  <h3>The Rise of Mobile Marketing:</h3>
+                </div>
+                <p class="post-description">
+                  Creating Mobile-Optimized Campaigns to Reach Customers
+                  on-the-go
+                </p>
+                <a href="#" class="btn-read-more"
+                  >Read More <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION - Shane -->
+    <section class="contact-section-custom" id="contact">
+      <img src="/assets/bg/vector5.png" alt="" class="vector-decor top-left" />
+
+      <img
+        src="/assets/bg/vector 5.0.png"
+        alt=""
+        class="vector-decor bottom-right"
+      />
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2 class="contact-title">Contact</h2>
+          <p class="contact-subtitle">
+            For immediate assistance, contact us 9:00 AM - 6:00 PM<br />
+            to address any emergency needs.
+          </p>
+        </div>
+
+        <!-- Map Frame Container -->
+        <div class="map-frame-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3851.4443901614945!2d120.588888!3d15.133333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f24df45214ab%3A0x6bd6c7e2b1090be4!2sPlaza%20Victoria%2C%20Angeles%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Split Grid: Info Pills (Left) vs Form (Right) -->
+        <div class="contact-grid">
+          <!-- Info Cards (Left) -->
+          <div class="info-pills-col">
+            <!-- Phone Card -->
+            <div class="info-capsule-row">
+              <div class="capsule-icon-badge">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="capsule-body-pill">
+                <div class="capsule-inner-card">
+                  <span class="capsule-label">Phone:</span>
+                  <span class="capsule-value">+63 45 963 2025</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="info-capsule-row">
+              <div class="capsule-icon-badge">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="capsule-body-pill">
+                <div class="capsule-inner-card">
+                  <span class="capsule-label">Email:</span>
+                  <span class="capsule-value">info@bb88advertising.com</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Open Hours Card -->
+            <div class="info-capsule-row">
+              <div class="capsule-icon-badge">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="capsule-body-pill">
+                <div class="capsule-inner-card">
+                  <span class="capsule-label">Open Hours:</span>
+                  <span class="capsule-value">Mon-Sat: 9:00 AM - 6:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="info-capsule-row">
+              <div class="capsule-icon-badge">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="capsule-body-pill">
+                <div class="capsule-inner-card">
+                  <span class="capsule-label">Location:</span>
+                  <span class="capsule-value desc-text">
+                    Unit D, 2nd Floor Plaza Victoria Bldg., Sto. Rosario St.,<br />Sto.
+                    Domingo, Angeles City 2009 Philippines
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (Right) -->
+          <div class="form-col">
+            <form id="contact-form" onsubmit="event.preventDefault()">
+              <div class="form-row-half">
+                <input type="text" placeholder="Your name" required />
+                <input type="email" placeholder="Your email" required />
+              </div>
+              <input
+                type="text"
+                placeholder="Subject"
+                required
+                class="full-width-input"
+              />
+              <textarea placeholder="Message" rows="6" required></textarea>
+            </form>
+          </div>
+        </div>
+
+        <!-- Align Bottom Action Footer -->
+        <div class="contact-bottom-bar">
+          <div class="contact-logo-text">
+            <h3>BB 88 ADVERTISING</h3>
+            <p>AND DIGITAL SOLUTIONS INC.</p>
+          </div>
+          <button type="submit" form="contact-form" class="btn-send-message">
+            Send Message
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION - Shane -->
+    <footer class="w-full relative z-10">
+      <div
+        class="footer-social-section w-full flex flex-col items-center justify-center"
+      >
+        <p class="footer-title">Follow us on</p>
+
+        <div class="flex items-center gap-4">
+          <a href="#" class="social-icon-btn flex items-center justify-center">
+            <span class="icon-inner-circle flex items-center justify-center">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </span>
+          </a>
+          <a href="#" class="social-icon-btn flex items-center justify-center">
+            <span class="icon-inner-circle flex items-center justify-center">
+              <i class="fa-brands fa-instagram text-xs"></i>
+            </span>
+          </a>
+          <a href="#" class="social-icon-btn flex items-center justify-center">
+            <span class="icon-inner-circle flex items-center justify-center">
+              <i class="fa-brands fa-x text-xs"></i>
+            </span>
+          </a>
+          <a href="#" class="social-icon-btn flex items-center justify-center">
+            <span class="icon-inner-circle flex items-center justify-center">
+              <i class="fa-brands fa-linkedin-in text-xs"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright-section w-full px-6 text-center">
+        <p>
+          ©2026 BB 88 Advertising & Digital Solutions Inc., All Rights Reserved.
+          &nbsp;|&nbsp; Designed & Developed by BB 88 Advertising and Digital
+          Solutions Inc.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
