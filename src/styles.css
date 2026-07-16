@@ -963,8 +963,6 @@ nav {
 
 /* CONTACT */
 .contact {
-  position: relative;
-  width: 100%;
   padding: 80px 24px;
   background-image: url("../assets/bg/background5.png");
   background-size: cover;
@@ -972,7 +970,6 @@ nav {
   background-repeat: no-repeat;
   box-sizing: border-box;
   overflow: hidden;
-  z-index: 10;
   font-family: "Inter", sans-serif;
 }
 
@@ -982,6 +979,7 @@ nav {
   z-index: 1;
   max-width: 280px;
 }
+
 .vector-decor.top-left {
   top: 0;
   left: 0;
@@ -1291,7 +1289,6 @@ nav {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding: 20px 24px;
   font-family: "Inter", sans-serif;
-  text-align: center;
 }
 
 .footer-copyright-section p {
