@@ -105,17 +105,23 @@ nav {
 
 .hero-vector-overlay {
   position: absolute;
-  top: clamp(210px, 15vh, 214px); /* Adjusts between 120px and 214px */
+  top: clamp(160px, 15vh, 214px);
   bottom: 0;
-  right: clamp(-200px, -10vw, -100px); /* Adjusts position */
+  right: clamp(-200px, -10vw, -100px);
   width: clamp(300px, 55%, 750px);
   max-width: 750px;
   height: auto;
   object-fit: contain;
   pointer-events: none;
   z-index: 1;
-  transform: scale(clamp(1.25, 1.15, 1.3)); /* Scales between 1 and 1.3 */
+  transform: scale(clamp(1.25, 1.15, 1.3));
   transform-origin: bottom right;
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .hero-vector-overlay {
+    top: 210px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -236,6 +242,12 @@ nav {
   z-index: 1;
   transform: scale(clamp(1.25, 1.15, 1.3));
   transform-origin: bottom right;
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .about-vector-overlay {
+    top: 920px;
+  }
 }
 
 @media (max-width: 1024px) {
