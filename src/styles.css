@@ -244,12 +244,6 @@ nav {
   transform-origin: bottom right;
 }
 
-@media (min-width: 1367px) and (max-width: 1920px) {
-  .about-vector-overlay {
-    top: 920px;
-  }
-}
-
 @media (max-width: 1024px) {
   .about-vector-overlay {
     width: 60%;
