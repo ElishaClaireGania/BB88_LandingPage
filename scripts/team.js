@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Database ng mga teksto para sa bawat role
   const roleData = {
     software: {
       title: "Software Engineers",
@@ -37,11 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const roleTitle = document.getElementById("role-title");
   const roleDesc = document.getElementById("role-desc");
 
-  // Function para kalkulahin ang lokasyon ng card at ituro ang arrow pointer
   function updateArrowPosition(targetCard) {
     if (!speechBubble || !arrow || !targetCard) return;
 
-    // requestAnimationFrame ensures position calculations are synchronized with screen paint frames
     requestAnimationFrame(() => {
       const bubbleRect = speechBubble.getBoundingClientRect();
       const cardRect = targetCard.getBoundingClientRect();
@@ -49,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cardRect.left + cardRect.width / 2 - bubbleRect.left;
 
       let percentLeft = (cardCenterInBubble / bubbleRect.width) * 100;
-      percentLeft = Math.max(6, Math.min(94, percentLeft)); // boundary limits near rounded borders
+      percentLeft = Math.max(6, Math.min(94, percentLeft));
       arrow.style.left = `${percentLeft}%`;
     });
   }
@@ -57,12 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (cards.length > 0 && roleTitle && roleDesc) {
     const defaultCard = document.getElementById("btn-multimedia");
 
-    // Set arrow directly over "Multimedia Artists" initially
     if (defaultCard) {
       setTimeout(() => updateArrowPosition(defaultCard), 300);
     }
 
-    // Double check positions on full page asset load
     window.addEventListener("load", () => {
       const activeCard =
         document.querySelector(".team-card.active-card") || defaultCard;
@@ -71,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Event listener sa pag-click ng cards
     cards.forEach((card) => {
       card.addEventListener("click", () => {
         const selectedRole = card.getAttribute("data-role");
@@ -79,24 +73,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!data) return;
 
-        // I-reset ang visual states ng card nodes
         cards.forEach((c) => {
           c.classList.remove("active-card");
         });
 
-        // I-apply ang fully-active CSS architecture sa pinindot na card
         card.classList.add("active-card");
 
-        // Dynamic text substitution sa bubble card
         roleTitle.textContent = data.title;
         roleDesc.textContent = data.desc;
 
-        // Islide ang arrow patungo sa bagong posisyon
         updateArrowPosition(card);
       });
     });
 
-    // Handle responsive window adjustments smoothly
     window.addEventListener("resize", () => {
       const activeCard = document.querySelector(".team-card.active-card");
       if (activeCard) {

@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&display=swap"
       rel="stylesheet"
     />
     <link
@@ -126,9 +126,7 @@
         <div class="about-contents">
           <h2>About Us</h2>
 
-          <div
-            class="divider z-10 border w-[100px] h-[2px] border-t-[4px] border-[#a8cf45] rounded-3xl"
-          ></div>
+          <div class="divider z-10"></div>
 
           <h3>Creative Solutions for Impactful Brand Communication</h3>
           <p>
@@ -174,9 +172,7 @@
       <section class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
 
-        <div
-          class="divider z-10 border w-[100px] h-[2px] border-t-[4px] border-[#a8cf45] rounded-3xl"
-        ></div>
+        <div class="divider z-10"></div>
 
         <div class="filter-bar">
           <button class="filter-btn active" data-filter="All">All</button>
@@ -213,12 +209,12 @@
 
       <div class="team-container">
         <div class="team-header">
-          <h2 class="team-main-title">Our Team</h2>
+          <h2>Our Team</h2>
+          <div class="divider z-10"></div>
         </div>
 
-        <!-- First Row: 4 Cards -->
-        <div class="team-row row-four">
-          <div class="team-card" data-role="software">
+        <div class="team-row">
+          <button class="team-card" id="btn-software" data-role="software">
             <div class="card-body">
               <div class="active-circle">
                 <img
@@ -228,10 +224,11 @@
                 />
               </div>
             </div>
-            <div class="card-band">Software Engineers</div>
-          </div>
 
-          <div class="team-card" data-role="web">
+            <div class="card-band">Software Engineers</div>
+          </button>
+
+          <button class="team-card" id="btn-web" data-role="web">
             <div class="card-body">
               <div class="active-circle">
                 <img
@@ -241,10 +238,11 @@
                 />
               </div>
             </div>
-            <div class="card-band">Web Developers</div>
-          </div>
 
-          <div class="team-card" data-role="app">
+            <div class="card-band">Web Developers</div>
+          </button>
+
+          <button class="team-card" id="btn-app" data-role="app">
             <div class="card-body">
               <div class="active-circle">
                 <img
@@ -254,10 +252,11 @@
                 />
               </div>
             </div>
-            <div class="card-band">App Developers</div>
-          </div>
 
-          <div class="team-card" data-role="graphic">
+            <div class="card-band">App Developers</div>
+          </button>
+
+          <button class="team-card" id="btn-graphic" data-role="graphic">
             <div class="card-body">
               <div class="active-circle">
                 <img
@@ -267,16 +266,16 @@
                 />
               </div>
             </div>
+
             <div class="card-band">Graphic Artists</div>
-          </div>
+          </button>
         </div>
 
-        <!-- Second Row: 3 Cards (Multimedia starts active) -->
-        <div class="team-row row-three">
-          <div
+        <div class="team-row team-bottom">
+          <button
             class="team-card active-card"
-            data-role="multimedia"
             id="btn-multimedia"
+            data-role="multimedia"
           >
             <div class="card-body">
               <div class="active-circle">
@@ -287,10 +286,11 @@
                 />
               </div>
             </div>
-            <div class="card-band">Multimedia Artists</div>
-          </div>
 
-          <div class="team-card" data-role="writers">
+            <div class="card-band">Multimedia Artists</div>
+          </button>
+
+          <button class="team-card" id="btn-writers" data-role="writers">
             <div class="card-body">
               <div class="active-circle">
                 <img
@@ -300,10 +300,11 @@
                 />
               </div>
             </div>
-            <div class="card-band">Creative Writers</div>
-          </div>
 
-          <div class="team-card" data-role="director">
+            <div class="card-band">Creative Writers</div>
+          </button>
+
+          <button class="team-card" id="btn-director" data-role="director">
             <div class="card-body">
               <div class="active-circle">
                 <img
@@ -313,15 +314,17 @@
                 />
               </div>
             </div>
+
             <div class="card-band">Creative Director</div>
-          </div>
+          </button>
         </div>
 
-        <!-- The Speech Bubble Container -->
-        <div class="speech-bubble-wrapper">
-          <div id="team-speech-bubble" class="team-speech-bubble">
+        <div class="speech-wrapper">
+          <div class="team-speech-bubble" id="team-speech-bubble">
             <div id="bubble-arrow" class="bubble-arrow"></div>
+
             <h3 id="role-title" class="role-title">Multimedia Artists</h3>
+
             <p id="role-desc" class="role-desc">
               Multimedia Artists are similar to Graphic Artists, but they
               specialize in creating dynamic and interactive content like
@@ -335,15 +338,15 @@
         <div class="team-illustration-wrapper">
           <img
             src="/assets/vector/vector4.png"
-            alt="Team Illustration"
             class="team-people-vector"
+            alt="Our Team"
           />
         </div>
       </div>
     </section>
 
     <!-- RECENT POSTS SECTION - Shane -->
-    <section class="recent-posts-section" id="recent-posts">
+    <section class="recent-posts" id="recent-posts">
       <img
         src="/assets/vector/vector2.png"
         alt=""
@@ -355,17 +358,18 @@
         class="posts-vector top-right"
       />
 
-      <div class="posts-container">
-        <div class="posts-header">
-          <h2 class="posts-title">Recent Posts</h2>
-        </div>
+      <div class="recent-posts-header">
+        <h2>Recent Posts</h2>
+        <div class="divider z-10"></div>
+      </div>
 
+      <div class="posts-container">
         <div class="posts-grid">
           <article class="post-card">
             <div class="card-inner">
               <div class="post-image-wrapper">
                 <img
-                  src="assets/posts/post1.jpg"
+                  src="/assets/picture/picture1.png"
                   alt="E-Commerce's Impact on Marketing"
                 />
               </div>
@@ -389,7 +393,7 @@
             <div class="card-inner">
               <div class="post-image-wrapper">
                 <img
-                  src="assets/posts/post2.jpg"
+                  src="/assets/picture/picture2.png"
                   alt="The Rise of Mobile Marketing"
                 />
               </div>
@@ -413,7 +417,7 @@
             <div class="card-inner">
               <div class="post-image-wrapper">
                 <img
-                  src="assets/posts/post3.jpg"
+                  src="/assets/picture/picture3.png"
                   alt="The Rise of Mobile Marketing"
                 />
               </div>
@@ -437,7 +441,7 @@
     </section>
 
     <!-- CONTACT SECTION - Shane -->
-    <section class="contact-section-custom" id="contact">
+    <section class="contact" id="contact">
       <img src="/assets/bg/vector5.png" alt="" class="vector-decor top-left" />
 
       <img
@@ -448,13 +452,13 @@
       <div class="contact-container">
         <div class="contact-header">
           <h2 class="contact-title">Contact</h2>
+          <div class="divider z-10"></div>
           <p class="contact-subtitle">
             For immediate assistance, contact us 9:00 AM - 6:00 PM<br />
             to address any emergency needs.
           </p>
         </div>
 
-        <!-- Map Frame Container -->
         <div class="map-frame-wrapper">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3851.4443901614945!2d120.588888!3d15.133333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f24df45214ab%3A0x6bd6c7e2b1090be4!2sPlaza%20Victoria%2C%20Angeles%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph"
@@ -464,9 +468,8 @@
           ></iframe>
         </div>
 
-        <!-- Split Grid: Info Pills (Left) vs Form (Right) -->
         <div class="contact-grid">
-          <!-- Info Cards (Left) -->
+          <!-- Info Cards -->
           <div class="info-pills-col">
             <!-- Phone Card -->
             <div class="info-capsule-row">
@@ -524,7 +527,7 @@
             </div>
           </div>
 
-          <!-- Contact Form (Right) -->
+          <!-- Contact Form -->
           <div class="form-col">
             <form id="contact-form" onsubmit="event.preventDefault()">
               <div class="form-row-half">
