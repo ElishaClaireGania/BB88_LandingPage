@@ -351,6 +351,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-top: 20px;
   margin-bottom: 32px;
   background-color: white;
   color: #48887b;
