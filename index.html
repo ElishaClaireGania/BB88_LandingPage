@@ -10,8 +10,8 @@
     <script src="./scripts/nav-active.js" defer></script>
     <script src="./scripts/animations.js" defer></script>
     <script src="./scripts/portfolio.js" defer></script>
-    <script src="./scripts/app.js" defer></script>
     <script src="./scripts/team.js" defer></script>
+    <script src="./scripts/app.js" defer></script>
 
     <!-- STYLESHEETS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -99,9 +99,7 @@
       <div class="about-wrapper relative z-10 w-full max-w-[1200px]">
         <div class="design-marketing flex flex-col items-center text-center">
           <h2>Design and Marketing Solutions</h2>
-          <div
-            class="divider border w-[100px] h-[2px] border-t-[4px] border-[#a8cf45] rounded-3xl"
-          ></div>
+          <div class="divider z-10"></div>
 
           <div class="about-icons flex flex-wrap justify-center gap-8 mt-1">
             <div class="icon-container flex flex-col items-center">
@@ -146,10 +144,9 @@
           </div>
         </div>
 
-        <!-- The White Text Card (Can grow as tall as it needs) -->
         <div class="about-contents flex flex-col items-center">
           <h2>About Us</h2>
-          <div class="divider"></div>
+          <div class="divider z-10"></div>
           <h3>Creative Solutions for Impactful Brand Communication</h3>
           <p>
             BB 88 Advertising & Digital Solutions Inc. is a "One-Stop" shop for
@@ -184,7 +181,142 @@
     </section>
 
     <!-- SERVICES SECTION - Kim -->
-    <section class="services" id="services"></section>
+    <div id="bg-services" class="relative w-full overflow-hidden">
+      <img
+        src="assets/vector/vector2.png"
+        alt=""
+        class="vector-decor top-left"
+      />
+
+      <img
+        src="assets/vector/vector2.0.png"
+        alt=""
+        class="vector-decor top-right"
+      />
+
+      <img
+        src="assets/vector/vector2.1.png"
+        alt=""
+        class="vector-decor bottom-left"
+      />
+
+      <img
+        src="assets/vector/vector2.2.png"
+        alt=""
+        class="vector-decor bottom-right"
+      />
+
+      <section class="services">
+        <div class="services-header">
+          <h2>Our Services</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="card-container">
+          <div class="left-card">
+            <img
+              src="/assets/vector/Digital Marketing Management vector.png"
+              alt="Digital Marketing Management"
+            />
+          </div>
+
+          <div class="middle-card">
+            <div class="middle-card-title-box">
+              <h3>
+                Media Production
+                <br />
+                Management
+              </h3>
+            </div>
+
+            <div class="middle-card-body">
+              <p>
+                We have a team of in-house graphic designers, animators,
+                architectural designers, engineers and copywriters.
+              </p>
+
+              <p>
+                We also work with trusted contractors and outside firms. We
+                provide creative input such as concept visualization up to final
+                output. We define an engaging visual aspects of websites, books,
+                magazines, product packaging, exhibitions, visual production
+                designs and more.
+              </p>
+            </div>
+          </div>
+
+          <div class="right-card">
+            <img
+              src="/assets/vector/System Solutions & Management vector.png"
+              alt="System Solutions & Management"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="relative w-full h-[8px] bg-[#48887b] z-20"></div>
+
+    <div class="icons-carousel-container">
+      <div class="carousel-wrapper">
+        <div class="carousel-track gap-8" id="carousel-track">
+          <div class="carousel-item w-[100px] h-full">
+            <img
+              src="assets/logo/logo1.png"
+              alt="Logo 1"
+              class="max-h-[100px] max-w-[100px]"
+            />
+          </div>
+          <div class="carousel-item w-[100px] h-full">
+            <img
+              src="assets/logo/logo2.png"
+              alt="Logo 2"
+              class="max-h-[100px] max-w-[100px]"
+            />
+          </div>
+          <div class="carousel-item w-[100px] h-full">
+            <img
+              src="assets/logo/logo3.png"
+              alt="Logo 3"
+              class="max-h-[100px] max-w-[100px]"
+            />
+          </div>
+          <div class="carousel-item w-[100px] h-full">
+            <img
+              src="assets/logo/logo 4.png"
+              alt="Logo 4"
+              class="max-h-[100px] max-w-[100px]"
+            />
+          </div>
+          <div class="carousel-item w-[100px] h-full">
+            <img
+              src="assets/logo/logo 5.png"
+              alt="Logo 5"
+              class="max-h-[100px] max-w-[100px]"
+            />
+          </div>
+          <div class="carousel-item w-[100px] h-full">
+            <img
+              src="assets/logo/logo 6.png"
+              alt="Logo 6"
+              class="max-h-[100px] max-w-[100px]"
+            />
+          </div>
+          <div class="carousel-item w-[100px] h-full">
+            <img
+              src="assets/logo/logo 7.png"
+              alt="Logo 7"
+              class="max-h-[100px] max-w-[100px]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="carousel-dots flex justify-center items-center space-x-2 mt-5"
+      ></div>
+    </div>
+    <div class="relative w-full h-[8px] bg-[#48887b] z-20"></div>
 
     <!-- PORTFOLIO SECTION - Claire -->
     <div
@@ -193,7 +325,6 @@
     >
       <section class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
-
         <div class="divider z-10"></div>
 
         <div class="filter-bar">
@@ -224,148 +355,6 @@
         ></div>
       </section>
     </div>
-
-    <!-- TEAM SECTION - Kim -->
-    <section class="team relative overflow-hidden w-full" id="team">
-      <img src="/assets/vector/vector3.png" alt="" class="team-clouds" />
-
-      <div class="team-container">
-        <div class="team-header">
-          <h2>Our Team</h2>
-          <div class="divider z-10"></div>
-        </div>
-
-        <div class="team-row">
-          <button class="team-card" id="btn-software" data-role="software">
-            <div class="card-body">
-              <div class="active-circle">
-                <img
-                  src="/assets/icon/ourteam(icon1).png"
-                  alt="Software Engineers"
-                  class="card-icon"
-                />
-              </div>
-            </div>
-
-            <div class="card-band">Software Engineers</div>
-          </button>
-
-          <button class="team-card" id="btn-web" data-role="web">
-            <div class="card-body">
-              <div class="active-circle">
-                <img
-                  src="/assets/icon/ourteam(icon2).png"
-                  alt="Web Developers"
-                  class="card-icon"
-                />
-              </div>
-            </div>
-
-            <div class="card-band">Web Developers</div>
-          </button>
-
-          <button class="team-card" id="btn-app" data-role="app">
-            <div class="card-body">
-              <div class="active-circle">
-                <img
-                  src="/assets/icon/ourteam(icon3).png"
-                  alt="App Developers"
-                  class="card-icon"
-                />
-              </div>
-            </div>
-
-            <div class="card-band">App Developers</div>
-          </button>
-
-          <button class="team-card" id="btn-graphic" data-role="graphic">
-            <div class="card-body">
-              <div class="active-circle">
-                <img
-                  src="/assets/icon/ourteam(icon4).png"
-                  alt="Graphic Artists"
-                  class="card-icon"
-                />
-              </div>
-            </div>
-
-            <div class="card-band">Graphic Artists</div>
-          </button>
-        </div>
-
-        <div class="team-row team-bottom">
-          <button
-            class="team-card active-card"
-            id="btn-multimedia"
-            data-role="multimedia"
-          >
-            <div class="card-body">
-              <div class="active-circle">
-                <img
-                  src="/assets/icon/ourteam(icon7).png"
-                  alt="Multimedia Artists"
-                  class="card-icon"
-                />
-              </div>
-            </div>
-
-            <div class="card-band">Multimedia Artists</div>
-          </button>
-
-          <button class="team-card" id="btn-writers" data-role="writers">
-            <div class="card-body">
-              <div class="active-circle">
-                <img
-                  src="/assets/icon/ourteam(icon5).png"
-                  alt="Creative Writers"
-                  class="card-icon"
-                />
-              </div>
-            </div>
-
-            <div class="card-band">Creative Writers</div>
-          </button>
-
-          <button class="team-card" id="btn-director" data-role="director">
-            <div class="card-body">
-              <div class="active-circle">
-                <img
-                  src="/assets/icon/ourteam(icon6).png"
-                  alt="Creative Director"
-                  class="card-icon"
-                />
-              </div>
-            </div>
-
-            <div class="card-band">Creative Director</div>
-          </button>
-        </div>
-
-        <div class="speech-wrapper">
-          <div class="team-speech-bubble" id="team-speech-bubble">
-            <div id="bubble-arrow" class="bubble-arrow"></div>
-
-            <h3 id="role-title" class="role-title">Multimedia Artists</h3>
-
-            <p id="role-desc" class="role-desc">
-              Multimedia Artists are similar to Graphic Artists, but they
-              specialize in creating dynamic and interactive content like
-              videos, 3D animations, and virtual reality experiences. They use a
-              variety of software tools to create engaging and immersive
-              experiences for users.
-            </p>
-          </div>
-        </div>
-
-        <div class="team-illustration-wrapper">
-          <img
-            src="/assets/vector/vector4.png"
-            class="team-people-vector"
-            alt="Our Team"
-          />
-        </div>
-      </div>
-    </section>
 
     <!-- RECENT POSTS SECTION - Shane -->
     <section

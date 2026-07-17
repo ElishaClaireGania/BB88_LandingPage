@@ -1,54 +1,91 @@
-const track = document.getElementById('carousel-track');
-let isDown = false;
-let startX;
-let scrollLeft;
-let autoScrollInterval;
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("carousel-track");
+  const wrapper = document.querySelector(".carousel-wrapper");
+  const dotsContainer = document.querySelector(".carousel-dots");
 
-// Automatically scrolls the logo strip smoothly
-function startAutoScroll() {
-  autoScrollInterval = setInterval(() => {
-    track.scrollLeft += 1;
-    
-    // Jump back to start immediately when hitting the duplicate block border
-    if (track.scrollLeft >= (track.scrollWidth - track.clientWidth - 10)) {
-      track.scrollLeft = 0;
+  if (!track) return;
+
+  // Save original list reference and clone them to the end
+  const originals = [...track.children];
+
+  while (track.scrollWidth < window.innerWidth * 3) {
+    originals.forEach((item) => {
+      track.appendChild(item.cloneNode(true));
+    });
+  }
+  //  Calculate the PERFECT loop boundary math
+  let firstSetWidth = 0;
+  function calculateWidths() {
+    if (originals.length === 0) return;
+
+    const firstItem = originals[0];
+    const itemWidth = firstItem.getBoundingClientRect().width;
+    const trackStyle = window.getComputedStyle(track);
+    const gapValue = parseFloat(trackStyle.gap) || 0;
+    const singleItemTotalWidth = itemWidth + gapValue;
+
+    firstSetWidth = singleItemTotalWidth * originals.length;
+  }
+
+  calculateWidths();
+
+  let x = 0;
+  let speed = 0.7;
+  let paused = false;
+
+  // Build indicator dots
+  if (dotsContainer) {
+    dotsContainer.innerHTML = "";
+    originals.forEach((_, index) => {
+      const dot = document.createElement("span");
+      dot.className = "carousel-dot";
+      if (index === 0) {
+        dot.classList.add("active");
+      }
+      dotsContainer.appendChild(dot);
+    });
+  }
+
+  // Update active dot
+  function updateDots() {
+    if (!dotsContainer) return;
+
+    const dots = dotsContainer.querySelectorAll(".carousel-dot");
+    const percentage = x / firstSetWidth;
+    const index = Math.floor(percentage * originals.length) % originals.length;
+
+    dots.forEach((dot) => dot.classList.remove("active"));
+    if (dots[index]) {
+      dots[index].classList.add("active");
     }
-  }, 25); // Controls flow speed
-}
+  }
 
-function stopAutoScroll() {
-  clearInterval(autoScrollInterval);
-}
+  // Loop animation engine
+  function animate() {
+    if (!paused) {
+      x += speed;
 
-// Drag functionality for mouse control
-track.addEventListener('mousedown', (e) => {
-  isDown = true;
-  stopAutoScroll();
-  startX = e.pageX - track.offsetLeft;
-  scrollLeft = track.scrollLeft;
+      if (x >= firstSetWidth) {
+        x = 0;
+      }
+
+      track.style.transform = `translateX(-${x}px)`;
+      updateDots();
+    }
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+
+  wrapper.addEventListener("mouseenter", () => {
+    paused = true;
+  });
+
+  wrapper.addEventListener("mouseleave", () => {
+    paused = false;
+  });
+
+  window.addEventListener("resize", () => {
+    calculateWidths();
+  });
 });
-
-track.addEventListener('mouseleave', () => {
-  isDown = false;
-  startAutoScroll();
-});
-
-track.addEventListener('mouseup', () => {
-  isDown = false;
-  startAutoScroll();
-});
-
-track.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - track.offsetLeft;
-  const walk = (x - startX) * 2; 
-  track.scrollLeft = scrollLeft - walk;
-});
-
-// Pause flow when a user points at a logo, resume when pointer leaves
-track.addEventListener('mouseenter', stopAutoScroll);
-track.addEventListener('mouseleave', startAutoScroll);
-
-// Kick off auto scroll on window load
-window.addEventListener('load', startAutoScroll);
