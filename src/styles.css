@@ -246,7 +246,7 @@ nav {
 
 @media (min-width: 1367px) and (max-width: 1920px) {
   .about-vector-overlay {
-    top: 920px;
+    bottom: 920px;
   }
 }
 
@@ -648,7 +648,6 @@ nav {
 @media (max-width: 991px) {
   .card-container {
     flex-direction: column;
-
     gap: 30px;
   }
 
