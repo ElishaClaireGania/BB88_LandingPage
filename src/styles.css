@@ -889,11 +889,12 @@ nav {
 /* Small screens */
 @media (min-width: 1367px) and (max-width: 1920px) {
   .hero-vector-overlay {
-    top: 210px;
+    top: 200px;
   }
 
   .about-vector-overlay {
-    bottom: 920px;
+    bottom: 950px;
+    right: -200px;
   }
 }
 
@@ -987,11 +988,11 @@ nav {
   }
 
   .main-logo {
-    @apply w-full flex justify-center py-0.5 max-w-[200px] mx-auto;
+    @apply w-full flex justify-center py-0.5 max-w-50 mx-auto;
   }
 
   #main-logo {
-    @apply max-w-[150px];
+    @apply max-w-37.5;
   }
 
   .hero {
@@ -1024,7 +1025,7 @@ nav {
 
   .btn-primary,
   .btn-secondary {
-    @apply w-full max-w-[200px];
+    @apply w-full max-w-50;
   }
 
   .hero-bg-image {
@@ -1061,11 +1062,11 @@ nav {
   }
 
   .about-icons .icon-container {
-    @apply min-w-[100px] flex-1;
+    @apply min-w-25 flex-1;
   }
 
   .about-contents {
-    @apply p-4 rounded-[30px] mb-[30px] mt-0;
+    @apply p-4 rounded-[30px] mb-7.5 mt-0;
   }
 
   .about-contents h3 {
@@ -1081,11 +1082,11 @@ nav {
   }
 
   .icon-container {
-    @apply min-w-[130px] max-w-[160px] h-[130px];
+    @apply min-w-32.5 max-w-40 h-32.5;
   }
 
   .icon-wrapper {
-    @apply w-[50px] h-[50px];
+    @apply w-12.5 h-12.5;
   }
 
   .icon-label {
@@ -1097,7 +1098,7 @@ nav {
   }
 
   .team-card {
-    @apply w-full max-w-[300px];
+    @apply w-full max-w-75;
   }
 
   .role-title {
@@ -1105,7 +1106,7 @@ nav {
   }
 
   .team-speech-bubble {
-    @apply p-[26px];
+    @apply p-6.5;
   }
 
   .bubble-arrow {
@@ -1126,7 +1127,7 @@ nav {
   }
 
   .filter-bar {
-    @apply grid grid-cols-3 gap-2 px-4 py-3 rounded-[24px] mt-4 mb-6 overflow-visible flex-wrap justify-center max-w-[14000px];
+    @apply grid grid-cols-3 gap-2 px-4 py-3 rounded-3xl mt-4 mb-6 overflow-visible flex-wrap justify-center max-w-[14000px];
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.12);
@@ -1142,11 +1143,11 @@ nav {
   }
 
   .contact-grid {
-    @apply grid-cols-1 gap-[30px];
+    @apply grid-cols-1 gap-7.5;
   }
 
   .services {
-    @apply px-5 py-[60px];
+    @apply px-5 py-15;
   }
 
   .services-title {
@@ -1170,11 +1171,11 @@ nav {
   }
 
   .posts-grid {
-    @apply grid-cols-1 max-w-[400px];
+    @apply grid-cols-1 max-w-100;
   }
 
   .map-frame-wrapper iframe {
-    @apply h-[365px];
+    @apply h-91.25;
   }
 
   .capsule-icon-badge {
@@ -1187,7 +1188,7 @@ nav {
   }
 
   .capsule-inner-card {
-    @apply px-3 py-1.5 pl-5 min-h-[40px];
+    @apply px-3 py-1.5 pl-5 min-h-10;
   }
 
   .capsule-label {
@@ -1226,7 +1227,7 @@ nav {
 
   .btn-primary,
   .btn-secondary {
-    @apply w-full max-w-[160px] text-sm px-3 py-2;
+    @apply w-full max-w-40 text-sm px-3 py-2;
   }
 
   .about h2,
@@ -1239,7 +1240,7 @@ nav {
   }
 
   .icon-container {
-    @apply min-w-[100px] max-w-[130px] h-[110px] p-2;
+    @apply min-w-25 max-w-32.5 h-27.5 p-2;
   }
 
   .icon-wrapper {
@@ -1251,11 +1252,11 @@ nav {
   }
 
   .project-card {
-    @apply h-[220px];
+    @apply h-55;
   }
 
   .project-card .img-wrapper {
-    @apply h-[140px];
+    @apply h-35;
   }
 
   .project-card h3 {
@@ -1263,7 +1264,7 @@ nav {
   }
 
   .filter-bar {
-    @apply gap-1 px-3 py-2 rounded-[25px] mt-3 mb-[18px];
+    @apply gap-1 px-3 py-2 rounded-[25px] mt-3 mb-4.5;
   }
 
   .filter-btn {
@@ -1283,7 +1284,7 @@ nav {
   }
 
   .map-frame-wrapper iframe {
-    @apply h-[180px];
+    @apply h-45;
   }
 
   .contact-subtitle {
@@ -1320,11 +1321,11 @@ nav {
   }
 
   .icon-container {
-    @apply min-w-[80px] max-w-[110px] h-[100px];
+    @apply min-w-20 max-w-27.5 h-25;
   }
 
   .icon-wrapper {
-    @apply w-[35px] h-[35px];
+    @apply w-8.75 h-8.75;
   }
 
   .icon-label {
